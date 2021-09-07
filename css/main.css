@@ -353,14 +353,15 @@ li.layer {
 
 /* MASONRY JS STYLES START */
 
-.mansory-grid {
-  position: relative;
+.masonry-grid {
+  padding-bottom: 80px;
 }
 
 .grid {
   margin: 0 auto;
 }
 
+.grid-sizer,
 .grid-item {
   width: 32%;
 }
@@ -540,7 +541,7 @@ footer h1 {
   }
 }
 
-@media only screen and (max-width: 786px) {
+@media only screen and (max-width: 790px) {
   .menu-trigger {
     background: url(../images/hamburger-icon.svg) no-repeat center / cover;
     width: 35px;
@@ -625,6 +626,11 @@ footer h1 {
     display: none;
     transform: translateY(-200%);
   }
+
+  .grid-sizer,
+  .grid-item {
+    width: 48%;
+  }
 }
 
 @media only screen and (max-width: 560px) {
@@ -656,22 +662,22 @@ footer h1 {
     padding: 10px 0;
   }
 
-  .grid {
-    width: initial;
-  }
-
   .grid-item {
-    width: initial;
-  }
-
-  .tall-img {
-    height: initial;
+    width: 100%;
   }
 
   .sub-title {
     margin: 30px auto;
     font-size: 23px;
     line-height: 28px;
+  }
+
+  section.beating-heart {
+    height: auto;
+  }
+
+  #about .wrapper {
+    height: auto;
   }
 
   .beating-heart {
