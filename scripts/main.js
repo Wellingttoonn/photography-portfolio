@@ -15,9 +15,11 @@ $(document).ready(function () {
   $(".grid").masonry({
     //options
     itemSelector: ".grid-item",
-    columnWidth: ".grid-item",
+    columnWidth: ".grid-sizer",
+    itemSelector: ".grid-item",
+    percentPosition: true,
     fitWidth: true,
-    gutter: 0,
+    gutter: 10,
   });
 
   // SMOOTH SCROOL
