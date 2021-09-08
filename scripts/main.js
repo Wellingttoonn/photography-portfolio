@@ -10,18 +10,6 @@ $(document).ready(function () {
     body.classList.toggle("scroll", scrollY > 350);
   });
 
-  // MASONRY
-
-  $(".grid").masonry({
-    //options
-    itemSelector: ".grid-item",
-    columnWidth: ".grid-sizer",
-    itemSelector: ".grid-item",
-    percentPosition: true,
-    fitWidth: true,
-    gutter: 10,
-  });
-
   // SMOOTH SCROOL
   $(".menu li a[href^='#']").on("click", function (e) {
     e.preventDefault();
@@ -50,6 +38,7 @@ $(document).ready(function () {
     centerMode: true,
     slidesToShow: 3,
     fade: false,
+    // adaptiveHeight: true,
     prevArrow: '<button type="button" class="slick-prev">Previous</button>',
     nextArrow: '<button type="button" class="slick-next">Next</button>',
     responsive: [
