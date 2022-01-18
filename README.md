@@ -6,4 +6,4 @@ Plugins Used:
  - Parallax.js
  - Slick Slider
 
-Link: https://wellingttoonn.github.io/photography-portfolio/
+Link: https://wellingttoonn.github.io/site07-photoport/
